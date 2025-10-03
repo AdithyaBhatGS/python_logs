@@ -17,14 +17,14 @@ A simple python script to log every 3 seconds. The main goal is to test the conc
      docker ps -a
 6. Get into the container and check the logs
    - ```bash
-    docker exec -it py_log_container /bin/bash
+     docker exec -it py_log_container /bin/bash
    - Go to the /app/logs
      - ```bash
        cd /app/logs
      - Check the log file by **cat** command
 7. Inspect the path of the named volume
    - ```bash
-   docker volume inspect <host_path>
+     docker volume inspect <host_path>
    - Now just check the Mountpoint
      - "Mountpoint": "/var/lib/docker/volumes/feyman/_data"
 8. Now stop and remove the container
